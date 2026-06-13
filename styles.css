@@ -138,8 +138,8 @@ li { margin: 8px 0; }
 .figures { margin-top: 26px; display: grid; gap: 22px; }
 .figures.two-cols { grid-template-columns: repeat(2, 1fr); }
 figure { margin: 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #fff; box-shadow: var(--shadow); }
-figure img { width: 100%; height: 260px; object-fit: cover; object-position: top left; background: #fff; }
-.wide-figure img { height: auto; object-fit: contain; }
+figure img { width: 100%; height: auto; max-height: 420px; object-fit: contain; background: #fff; padding: 8px; }
+.wide-figure img { height: auto; object-fit: contain; max-height: 560px; }
 figcaption { padding: 14px 16px; font-size: 14px; color: var(--muted); background: #fff; border-top: 1px solid var(--line); }
 .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
 table { width: 100%; border-collapse: collapse; background: #fff; font-size: 14px; }

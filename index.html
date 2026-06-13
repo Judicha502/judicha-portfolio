@@ -236,34 +236,73 @@
           </div>
 
           <p>
-            Projet réalisé dans le cadre de l’UE <strong>STA118 — Outils informatiques de la statistique</strong>. Il combine
-            une première analyse exploratoire sous R et une analyse multivariée sous SAS sur un jeu de données décrivant
-            167 stations de ski françaises.
+            Projet réalisé dans le cadre de l’UE <strong>STA118 — Outils informatiques de la statistique</strong>.
+            Il combine une première analyse exploratoire sous <strong>R</strong> et une analyse multivariée sous <strong>SAS</strong>
+            sur un jeu de données décrivant <strong>167 stations de ski françaises</strong> selon l’altitude, les équipements,
+            les prix, la structure des pistes et l’accessibilité.
           </p>
 
           <div class="meta-grid">
             <div><strong>Outils</strong><span>R · RStudio · SAS Studio</span></div>
             <div><strong>Packages</strong><span>ggplot2 · corrplot</span></div>
             <div><strong>Données</strong><span>167 stations · variables numériques et catégorielles</span></div>
-            <div><strong>Analyse</strong><span>Statistiques descriptives · corrélations · ACP</span></div>
+            <div><strong>Analyse</strong><span>Descriptif · corrélations · ACP</span></div>
           </div>
+
+          <h4>Objectifs</h4>
+          <ul>
+            <li>Explorer et nettoyer un jeu de données complet sur les stations de ski françaises.</li>
+            <li>Comparer les stations selon leur altitude, leur massif, leurs équipements et leur offre de pistes.</li>
+            <li>Étudier les relations entre variables quantitatives avec une matrice de corrélation.</li>
+            <li>Identifier des profils de stations grâce à l’analyse en composantes principales.</li>
+          </ul>
+
+          <h4>Méthodologie</h4>
+          <ol>
+            <li><strong>Partie R :</strong> importation des données, contrôles de qualité, réorganisation des variables, détection des valeurs manquantes, statistiques descriptives et visualisations.</li>
+            <li><strong>Analyse corrélationnelle :</strong> construction d’une matrice de corrélation pour mesurer les liens entre altitude, équipements, types de pistes, enneigement et prix.</li>
+            <li><strong>Partie SAS :</strong> analyses descriptives par massif, création de variables complémentaires et réalisation d’une ACP.</li>
+            <li><strong>Interprétation :</strong> projection des stations sur les deux premiers axes afin de faire émerger les grands profils de stations.</li>
+          </ol>
 
           <h4>Résultats principaux</h4>
           <ul>
             <li>Le département ayant le plus de stations est la <strong>Savoie (73)</strong> avec <strong>42 stations</strong>.</li>
             <li>Les stations les moins hautes en moyenne se situent dans les <strong>Vosges (88)</strong>, autour de <strong>716 m</strong>.</li>
             <li>Sous SAS, le massif ayant l’altitude moyenne la plus faible est également les Vosges, avec <strong>785,75 m</strong>.</li>
-            <li>La première composante principale de l’ACP explique environ <strong>52,62 %</strong> de l’inertie totale.</li>
+            <li>La première composante principale explique environ <strong>52,62 %</strong> de l’inertie totale.</li>
             <li>Les deux premières composantes principales expliquent environ <strong>62,75 %</strong> de l’information totale.</li>
           </ul>
 
-          <div class="note">
-            <strong>À compléter avec figures.</strong> Cette section est prête pour recevoir les captures R/SAS : matrice de corrélation,
-            graphique ACP, statistiques par massif et visualisations ggplot2.
+          <div class="figures two-cols">
+            <figure>
+              <img src="assets/ski-acp-projection.png" alt="Projection des stations de ski sur les deux premières composantes de l'ACP" />
+              <figcaption>
+                <strong>Figure 4 — Projection ACP.</strong> Représentation des 167 stations sur les deux premières composantes principales pour visualiser les proximités et oppositions entre profils de stations.
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="assets/ski-correlation-matrix.png" alt="Matrice de corrélation des variables quantitatives des stations de ski" />
+              <figcaption>
+                <strong>Figure 5 — Matrice de corrélation.</strong> Les variables liées à la taille du domaine skiable, au nombre de pistes et à l’altitude présentent des corrélations positives structurantes.
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="assets/ski-altitude-neige-artificielle.png" alt="Distribution de l'altitude du sommet des pistes selon la présence de neige artificielle" />
+              <figcaption>
+                <strong>Figure 6 — Altitude et neige artificielle.</strong> Comparaison des distributions d’altitude du sommet des pistes selon la présence ou non de neige artificielle.
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="assets/ski-repartition-pistes.png" alt="Répartition des pistes par niveau de difficulté" />
+              <figcaption>
+                <strong>Figure 7 — Répartition des pistes.</strong> Visualisation synthétique de la structure moyenne des domaines skiables selon le niveau de difficulté des pistes.
+              </figcaption>
+            </figure>
           </div>
         </section>
 
-        <section class="project" id="elections">
+<section class="project" id="elections">
           <div class="project-heading">
             <div>
               <p class="project-label">Analyse quantitative · R</p>
@@ -273,13 +312,30 @@
           </div>
           <p>
             Analyse des tendances politiques régionales en France métropolitaine à partir des résultats de l’élection
-            présidentielle 2022. Le projet mobilise le nettoyage de données, les statistiques descriptives, les analyses
-            bivariées et l’ACP pour comparer les profils départementaux.
+            présidentielle 2022. Le projet mobilise le <strong>nettoyage de données</strong>, les <strong>statistiques descriptives</strong>,
+            les <strong>analyses bivariées</strong> et l’<strong>ACP</strong> afin de comparer les profils électoraux départementaux.
           </p>
-          <div class="note">
-            Pour rendre cette section aussi solide que les projets DVF et PaperWave, il faudra ajouter 2 à 3 figures : carte,
-            ACP, graphiques par département ou tableau de résultats.
+
+          <div class="meta-grid">
+            <div><strong>Outils</strong><span>R · Excel</span></div>
+            <div><strong>Échelle</strong><span>France métropolitaine · niveau départemental</span></div>
+            <div><strong>Méthodes</strong><span>Nettoyage · statistiques descriptives · ACP</span></div>
+            <div><strong>Résultat clé</strong><span>ACP expliquant environ 79 % de l’inertie totale</span></div>
           </div>
+
+          <h4>Objectifs</h4>
+          <ul>
+            <li>Mettre en évidence les différences territoriales dans les comportements électoraux.</li>
+            <li>Comparer les départements à partir d’indicateurs de vote et de participation.</li>
+            <li>Identifier des proximités et oppositions régionales grâce à l’ACP.</li>
+          </ul>
+
+          <h4>Apports du projet</h4>
+          <ul>
+            <li>Capacité à manipuler des données publiques et à structurer une analyse territoriale.</li>
+            <li>Interprétation statistique de résultats complexes à travers des représentations synthétiques.</li>
+            <li>Mobilisation d’une approche exploratoire pour transformer des résultats électoraux en insights lisibles.</li>
+          </ul>
         </section>
       </section>
 
