@@ -3,259 +3,243 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio de Judicha Mamiharilala, alternant Data Analyst / Data Scientist : Python, SQL, R, SAS, Power BI." />
+  <meta name="description" content="Portfolio de Judicha Mamiharilala, Data Analyst / Data Scientist en recherche d'alternance : Python, SQL, R, SAS, Power BI, BigQuery." />
+  <meta name="theme-color" content="#08111f" />
+  <meta property="og:title" content="Judicha Mamiharilala | Data Analyst / Data Scientist" />
+  <meta property="og:description" content="Projets data, BI, statistiques et data science. Disponible pour une alternance à partir de septembre 2026." />
+  <meta property="og:image" content="assets/og-image.jpg" />
   <title>Judicha Mamiharilala | Data Analyst / Data Scientist</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="logo" href="#top">JM</a>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header" data-header>
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="#top" aria-label="Retour en haut">
+        <span class="brand-mark">JM</span>
+        <span class="brand-text">Judicha Mamiharilala</span>
+      </a>
+
+      <button class="menu-button" id="menuButton" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
 
       <div class="nav-links" id="navLinks">
         <a href="#projects">Projets</a>
         <a href="#skills">Compétences</a>
-        <a href="#about">À propos</a>
+        <a href="#about">Profil</a>
         <a href="#contact">Contact</a>
+        <a class="nav-pill" href="assets/CV_Judicha_Mamiharilala.pdf" target="_blank" rel="noopener">CV PDF</a>
       </div>
-
-      <a class="nav-cta" href="./assets/Judicha_MAMIHARILALA_cv.pdf" target="_blank" rel="noopener">CV</a>
-
-      <button class="menu" id="menuButton" aria-label="Ouvrir le menu">☰</button>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero container">
-      <div class="hero-content">
+  <main id="main">
+    <section class="hero container" id="top">
+      <div class="hero-copy reveal">
         <p class="eyebrow">Disponible pour une alternance • Septembre 2026</p>
-
-        <h1>Judicha Mamiharilala</h1>
-        <h2>Data Analyst / Data Scientist</h2>
-
-        <p class="hero-text">
-          Étudiant en Mastère Big Data & IA, je transforme des données complexes en insights exploitables grâce à Python, SQL, R, SAS et Power BI.
-          Je recherche une alternance au rythme de <strong>1 semaine école / 3 semaines entreprise</strong>.
+        <h1>Data Analyst / Data Scientist orienté décision.</h1>
+        <p class="lead">
+          Je transforme des données complexes en analyses lisibles, tableaux de bord et indicateurs actionnables avec Python, SQL, R, SAS, BigQuery et Power BI.
         </p>
 
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects">Voir mes projets</a>
-          <a class="btn secondary" href="./assets/Judicha_MAMIHARILALA_cv.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+        <div class="hero-actions" aria-label="Actions principales">
+          <a class="button button-primary" href="#projects">Voir mes projets</a>
+          <a class="button button-secondary" href="assets/CV_Judicha_Mamiharilala.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
         </div>
+
+        <dl class="hero-highlights" aria-label="Résumé du profil">
+          <div>
+            <dt>Rythme</dt>
+            <dd>1 semaine école / 3 semaines entreprise</dd>
+          </div>
+          <div>
+            <dt>Mobilité</dt>
+            <dd>Paris • Île-de-France</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>BI • Statistiques • Data Science</dd>
+          </div>
+        </dl>
       </div>
 
-      <div class="hero-card">
-        <img src="./assets/profile.png" alt="Photo de Judicha Mamiharilala" />
-        <div class="status">En recherche d'alternance</div>
-
-        <ul>
-          <li><span>Localisation</span>Paris, Île-de-France</li>
-          <li><span>Formation</span>Mastère Big Data & IA</li>
-          <li><span>Focus</span>BI • Statistiques • Data Science</li>
-        </ul>
-      </div>
+      <aside class="profile-panel reveal" aria-label="Carte de profil">
+        <div class="portrait-frame">
+          <img src="assets/profile.png" alt="Portrait professionnel de Judicha Mamiharilala" />
+        </div>
+        <div class="profile-content">
+          <p class="availability">En recherche d'alternance</p>
+          <h2>Judicha Mamiharilala</h2>
+          <p>Mastère Big Data & IA — SUP de VINCI</p>
+          <div class="profile-tags">
+            <span>Python</span><span>SQL</span><span>Power BI</span><span>R</span>
+          </div>
+        </div>
+      </aside>
     </section>
 
-    <section class="stats container" aria-label="Chiffres clés">
-      <div>
-        <strong>500k+</strong>
-        <span>transactions immobilières analysées</span>
-      </div>
-
-      <div>
-        <strong>167</strong>
-        <span>stations de ski étudiées</span>
-      </div>
-
-      <div>
-        <strong>12</strong>
-        <span>tables mensuelles consolidées</span>
-      </div>
-
-      <div>
-        <strong>4</strong>
-        <span>projets data structurés</span>
-      </div>
+    <section class="metrics container reveal" aria-label="Chiffres clés">
+      <article><strong>500k+</strong><span>transactions immobilières analysées</span></article>
+      <article><strong>167</strong><span>stations de ski étudiées</span></article>
+      <article><strong>12</strong><span>tables mensuelles consolidées</span></article>
+      <article><strong>4</strong><span>projets data structurés</span></article>
     </section>
 
     <section class="section container" id="projects">
-      <div class="section-heading">
+      <div class="section-head reveal">
         <p class="eyebrow">Portfolio</p>
-        <h2>Projets data</h2>
-        <p>Des projets appliqués autour de l’analyse, la visualisation, la modélisation statistique et l’aide à la décision.</p>
+        <h2>Projets data sélectionnés</h2>
+        <p>Des cas concrets qui couvrent la préparation de données, l'analyse exploratoire, les indicateurs métier, la visualisation et la restitution.</p>
       </div>
 
       <div class="project-grid">
-        <article class="project-card featured">
-          <div class="project-meta">
+        <article class="project-card featured reveal">
+          <div class="project-topline">
             <span>Data Analyst / BI</span>
             <span>Python • SQL • Power BI</span>
           </div>
-
           <h3>Marché immobilier en Île-de-France</h3>
-
-          <p>
-            Analyse des données DVF pour identifier les tendances de prix et construire un outil d’évaluation des biens par rapport au marché local.
-          </p>
-
-          <ul>
-            <li>Nettoyage et transformation des données avec Python et SQL.</li>
-            <li>Construction d’indicateurs de prix au m² par commune et par année.</li>
-            <li>Tableaux de bord Power BI pour suivre l’évolution du marché.</li>
+          <p>Analyse des données DVF pour comprendre l'évolution des prix immobiliers et comparer chaque bien à son marché local.</p>
+          <ul class="clean-list">
+            <li>Nettoyage, structuration et transformation des données avec Python et SQL.</li>
+            <li>Construction d'indicateurs de prix au m² par commune et par année.</li>
+            <li>Dashboard Power BI pour identifier les biens sous-évalués ou surévalués.</li>
           </ul>
-
-          <div class="project-links">
-            <a href="https://github.com/Judicha502/analyse_marche_immobilier_idf" target="_blank" rel="noopener">GitHub</a>
-          </div>
+          <a class="text-link" href="https://github.com/Judicha502/analyse_marche_immobilier_idf" target="_blank" rel="noopener">Voir le repository</a>
         </article>
 
-        <article class="project-card">
-          <div class="project-meta">
-            <span>Data Analyst / BI</span>
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span>Customer Analytics</span>
             <span>BigQuery • SQL • Power BI</span>
           </div>
-
-          <h3>PaperWave — Segmentation clients</h3>
-
-          <p>
-            Analyse de données de ventes d’une entreprise d’impression en ligne pour segmenter les clients et identifier les profils stratégiques.
-          </p>
-
-          <ul>
-            <li>Consolidation et nettoyage de tables mensuelles dans BigQuery.</li>
-            <li>Création d’indicateurs RFM avec CTEs et fonctions fenêtre.</li>
-            <li>Dashboard Power BI pour guider les décisions marketing.</li>
+          <h3>PaperWave — segmentation clients</h3>
+          <p>Segmentation RFM pour identifier les profils clients stratégiques d'une entreprise d'impression en ligne.</p>
+          <ul class="clean-list">
+            <li>Consolidation et nettoyage de tables mensuelles dans Google BigQuery.</li>
+            <li>Requêtes SQL avancées avec CTEs et fonctions fenêtre.</li>
+            <li>Dashboard Power BI pour guider les actions marketing.</li>
           </ul>
-
-          <div class="project-links">
-            <a href="https://github.com/Judicha502" target="_blank" rel="noopener">GitHub</a>
-          </div>
+          <a class="text-link" href="https://github.com/Judicha502" target="_blank" rel="noopener">Voir GitHub</a>
         </article>
 
-        <article class="project-card">
-          <div class="project-meta">
+        <article class="project-card reveal">
+          <div class="project-topline">
             <span>Data Science</span>
-            <span>R • SAS</span>
+            <span>R • SAS • ACP</span>
           </div>
-
           <h3>Stations de ski françaises</h3>
-
-          <p>
-            Analyse statistique de 167 stations de ski pour comparer leurs profils selon l’altitude, les équipements, les prix et l’accessibilité.
-          </p>
-
-          <ul>
+          <p>Analyse statistique de 167 stations selon l'altitude, les équipements, les prix et l'accessibilité.</p>
+          <ul class="clean-list">
             <li>Analyses descriptives par massif et département.</li>
-            <li>Étude des corrélations entre variables quantitatives.</li>
-            <li>Analyse multivariée et ACP pour identifier des profils.</li>
+            <li>Étude de corrélations entre variables quantitatives.</li>
+            <li>Analyse multivariée et ACP pour identifier des profils de stations.</li>
           </ul>
-
-          <div class="project-links">
-            <a href="https://github.com/Judicha502" target="_blank" rel="noopener">GitHub</a>
-          </div>
+          <a class="text-link" href="https://github.com/Judicha502" target="_blank" rel="noopener">Voir GitHub</a>
         </article>
 
-        <article class="project-card">
-          <div class="project-meta">
+        <article class="project-card reveal">
+          <div class="project-topline">
             <span>Analyse quantitative</span>
             <span>R • Excel</span>
           </div>
-
           <h3>Élections présidentielles 2022</h3>
-
-          <p>
-            Analyse des tendances politiques régionales en France métropolitaine à partir des résultats des élections présidentielles françaises.
-          </p>
-
-          <ul>
+          <p>Analyse des tendances politiques régionales en France métropolitaine à partir des résultats électoraux.</p>
+          <ul class="clean-list">
             <li>Préparation et nettoyage des données électorales.</li>
             <li>Analyses descriptives et bivariées par département.</li>
-            <li>ACP expliquant 79 % de l’inertie totale.</li>
+            <li>ACP expliquant 79 % de l'inertie totale.</li>
           </ul>
-
-          <div class="project-links">
-            <a href="https://github.com/Judicha502/Analyse-des-tendances-politiques-en-France-Election-2022-" target="_blank" rel="noopener">GitHub</a>
-          </div>
+          <a class="text-link" href="https://github.com/Judicha502/Analyse-des-tendances-politiques-en-France-Election-2022-" target="_blank" rel="noopener">Voir le repository</a>
         </article>
       </div>
     </section>
 
     <section class="section container" id="skills">
-      <div class="section-heading">
-        <p class="eyebrow">Compétences</p>
-        <h2>Stack technique</h2>
+      <div class="section-head reveal">
+        <p class="eyebrow">Stack technique</p>
+        <h2>Compétences utiles en équipe data</h2>
       </div>
 
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Langages</h3>
-          <p>SQL • Python • SAS • R</p>
-        </div>
-
-        <div class="skill-card">
-          <h3>BI & Visualisation</h3>
-          <p>Power BI • Excel • Reporting • Matplotlib</p>
-        </div>
-
-        <div class="skill-card">
+      <div class="skills-layout">
+        <article class="skill-block reveal">
+          <h3>Analyse & programmation</h3>
+          <p>Python, SQL, R, SAS, Jupyter Notebook, data cleaning, création d'indicateurs et automatisation d'analyses.</p>
+        </article>
+        <article class="skill-block reveal">
+          <h3>BI & visualisation</h3>
+          <p>Power BI, Excel, reporting, dashboards décisionnels, storytelling data et visualisations claires.</p>
+        </article>
+        <article class="skill-block reveal">
           <h3>Statistiques</h3>
-          <p>Tests d’hypothèses • Régression • Analyse multivariée • Séries temporelles • ACP</p>
-        </div>
-
-        <div class="skill-card">
+          <p>Tests d'hypothèses, régression, analyse multivariée, ACP, séries temporelles et analyse quantitative.</p>
+        </article>
+        <article class="skill-block reveal">
           <h3>Bases de données</h3>
-          <p>MySQL • PostgreSQL • Google BigQuery</p>
-        </div>
-
-        <div class="skill-card">
-          <h3>Outils</h3>
-          <p>Jupyter Notebook • Git • GitHub • Pack Office</p>
-        </div>
-
-        <div class="skill-card">
-          <h3>Savoir-faire data</h3>
-          <p>Data cleaning • Création d’indicateurs • Data mining • Tableaux de bord • Aide à la décision</p>
-        </div>
+          <p>MySQL, PostgreSQL, Google BigQuery, requêtes SQL, CTEs, fonctions fenêtre et consolidation de données.</p>
+        </article>
       </div>
     </section>
 
     <section class="section container about" id="about">
-      <div>
-        <p class="eyebrow">À propos</p>
-        <h2>Profil</h2>
+      <div class="about-card reveal">
+        <p class="eyebrow">Profil</p>
+        <h2>Un profil hybride entre statistiques, business intelligence et data science.</h2>
       </div>
-
-      <p>
-        Je développe un profil hybride entre analyse de données, statistiques et business intelligence. Mes projets m’ont permis de travailler sur toute la chaîne data : nettoyage, structuration, analyse exploratoire, création d’indicateurs, modélisation statistique et restitution visuelle. Mon objectif est de rejoindre une équipe data où je pourrai contribuer à des projets concrets et progresser dans un environnement professionnel exigeant.
-      </p>
+      <div class="about-text reveal">
+        <p>
+          Étudiant en Mastère Big Data & IA, je développe des compétences en analyse de données, statistiques, data science et business intelligence. Mes projets m'ont permis de travailler sur toute la chaîne data : nettoyage, structuration, exploration, modélisation simple, création d'indicateurs et restitution visuelle.
+        </p>
+        <p>
+          Mon objectif est de rejoindre une équipe data où je pourrai contribuer à des projets concrets, progresser dans un environnement professionnel exigeant et créer des analyses utiles pour la prise de décision.
+        </p>
+      </div>
     </section>
 
     <section class="section container" id="contact">
-      <div class="contact-card">
+      <div class="contact-panel reveal">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Travaillons ensemble</h2>
-          <p>Je suis disponible pour une alternance en Data Analyst / Data Scientist à partir de septembre 2026.</p>
+          <h2>Discutons d'une alternance en data.</h2>
+          <p>Disponible à partir de septembre 2026 pour un poste de Data Analyst / Data Scientist en Île-de-France.</p>
         </div>
-
-        <div class="contact-links">
+        <div class="contact-actions">
           <a href="mailto:judichamh@gmail.com">judichamh@gmail.com</a>
-          <a href="https://github.com/Judicha502" target="_blank" rel="noopener">GitHub</a>
           <a href="https://www.linkedin.com/in/judicha-mamiharilala" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="./assets/Judicha_MAMIHARILALA_cv.pdf" target="_blank" rel="noopener">CV PDF</a>
+          <a href="https://github.com/Judicha502" target="_blank" rel="noopener">GitHub</a>
+          <a href="assets/CV_Judicha_Mamiharilala.pdf" target="_blank" rel="noopener">CV PDF</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">© 2026 Judicha Mamiharilala — Portfolio Data</div>
+    <div class="container footer-inner">
+      <span>© 2026 Judicha Mamiharilala</span>
+      <span>Portfolio Data Analyst / Data Scientist</span>
+    </div>
   </footer>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Judicha Mamiharilala",
+    "jobTitle": "Data Analyst / Data Scientist",
+    "email": "mailto:judichamh@gmail.com",
+    "url": "https://judicha-portfolio.vercel.app/",
+    "sameAs": [
+      "https://github.com/Judicha502",
+      "https://www.linkedin.com/in/judicha-mamiharilala"
+    ],
+    "knowsAbout": ["Python", "SQL", "Power BI", "R", "SAS", "BigQuery", "Data Analysis"]
+  }
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
