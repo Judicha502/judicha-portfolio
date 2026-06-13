@@ -1,15 +1,19 @@
 # Portfolio — Judicha Mamiharilala
 
-Portfolio personnel premium pour un profil Data Analyst & Data Science.
+Portfolio personnel de Judicha Mamiharilala, profil **Data Analyst & Data Science**.
 
-## Fichiers
+## Contenu
 
-- `index.html` : structure du site
-- `styles.css` : design responsive dark premium
-- `script.js` : menu mobile, animations, navigation active
-- `assets/profile.png` : photo de profil
-- `assets/CV_Judicha_Mamiharilala.pdf` : CV téléchargeable
+- Elevator pitch
+- Table des matières
+- Compétences data
+- Projets data
+- Méthodes & scripts
+- CV téléchargeable
+- Contact
 
 ## Déploiement
 
-Uploader tous les fichiers sur le repository GitHub `judicha-portfolio`. Vercel redéploie automatiquement après le commit.
+Ce portfolio est un site statique : `index.html`, `styles.css`, `script.js` et le dossier `assets`.
+
+Pour le publier sur Vercel ou GitHub Pages, il suffit d’uploader tous les fichiers du dossier dans le dépôt GitHub.
