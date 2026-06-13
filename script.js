@@ -1,54 +1,42 @@
-const header = document.querySelector('[data-header]');
 const menuButton = document.getElementById('menuButton');
 const navLinks = document.getElementById('navLinks');
-const sections = document.querySelectorAll('section[id]');
-const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
-const revealItems = document.querySelectorAll('.reveal');
+const year = document.getElementById('year');
 
-const closeMenu = () => {
-  navLinks?.classList.remove('open');
-  menuButton?.setAttribute('aria-expanded', 'false');
-};
+year.textContent = new Date().getFullYear();
 
 menuButton?.addEventListener('click', () => {
   const isOpen = navLinks.classList.toggle('open');
   menuButton.setAttribute('aria-expanded', String(isOpen));
 });
 
-navItems.forEach((link) => {
-  link.addEventListener('click', closeMenu);
+navLinks?.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+  });
 });
 
-const updateHeader = () => {
-  header?.classList.toggle('is-scrolled', window.scrollY > 12);
+const sections = [...document.querySelectorAll('section[id]')];
+const navItems = [...document.querySelectorAll('.nav-links a')];
+
+const setActiveLink = () => {
+  const current = sections.find((section) => {
+    const rect = section.getBoundingClientRect();
+    return rect.top <= 130 && rect.bottom >= 130;
+  });
+  navItems.forEach((item) => item.classList.toggle('active', current && item.getAttribute('href') === `#${current.id}`));
 };
 
-const updateActiveLink = () => {
-  let currentId = '';
-  sections.forEach((section) => {
-    const top = section.offsetTop - 120;
-    if (window.scrollY >= top) currentId = section.id;
-  });
-
-  navItems.forEach((link) => {
-    link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`);
-  });
-};
+document.addEventListener('scroll', setActiveLink, { passive: true });
+setActiveLink();
 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('is-visible');
+      entry.target.classList.add('visible');
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.15 });
 
-revealItems.forEach((item) => revealObserver.observe(item));
-window.addEventListener('scroll', () => {
-  updateHeader();
-  updateActiveLink();
-}, { passive: true });
-
-updateHeader();
-updateActiveLink();
+document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
