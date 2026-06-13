@@ -1,19 +1,23 @@
-# Portfolio — Judicha Mamiharilala
+# Judicha Mamiharilala — Data Analyst & Data Science Portfolio
 
-Portfolio personnel de Judicha Mamiharilala, profil **Data Analyst & Data Science**.
+Portfolio personnel orienté recruteur, inspiré d'une structure de portfolio Data Science type GitHub Pages.
 
 ## Contenu
 
-- Elevator pitch
-- Table des matières
-- Compétences data
-- Projets data
-- Méthodes & scripts
-- CV téléchargeable
-- Contact
+- Elevator Pitch
+- Compétences techniques
+- Projets détaillés avec méthodologie et captures
+- Analyse du marché immobilier IDF — DVF 2020–2025
+- Customer Segmentation — BigQuery & Power BI
+- Stations de ski françaises — R/SAS
+- Élections présidentielles 2022 — R
+- Contact et CV
 
 ## Déploiement
 
-Ce portfolio est un site statique : `index.html`, `styles.css`, `script.js` et le dossier `assets`.
+Le site est statique : `index.html`, `styles.css`, `script.js`, `assets/`.
+Il peut être déployé sur GitHub Pages ou Vercel.
 
-Pour le publier sur Vercel ou GitHub Pages, il suffit d’uploader tous les fichiers du dossier dans le dépôt GitHub.
+## Sécurité
+
+Ne jamais ajouter `recovery-codes.txt`, `.DS_Store` ou tout fichier sensible au repository.

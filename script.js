@@ -1,14 +1,14 @@
 const menuButton = document.getElementById('menuButton');
-const mainNav = document.getElementById('mainNav');
+const navLinks = document.getElementById('navLinks');
 
 menuButton?.addEventListener('click', () => {
-  const isOpen = mainNav.classList.toggle('open');
+  const isOpen = navLinks.classList.toggle('open');
   menuButton.setAttribute('aria-expanded', String(isOpen));
 });
 
-mainNav?.querySelectorAll('a').forEach((link) => {
+navLinks?.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => {
-    mainNav.classList.remove('open');
+    navLinks.classList.remove('open');
     menuButton?.setAttribute('aria-expanded', 'false');
   });
 });
